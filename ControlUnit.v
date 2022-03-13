@@ -102,7 +102,7 @@ always@ ( * ) begin
         end
 
         STATE_MV : begin
-            mux = X_Address + 4'd1;
+            mux = Y_Address + 4'd1;
             registers[X_Address] = 1;
             registers[Y_Address] = 1;
             done = 1;
