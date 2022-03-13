@@ -17,6 +17,8 @@ struct input_package {
     // input bits
     unsigned int clk;
     unsigned int Resetn = 0;
+    unsigned int IRen = 0;
+    unsigned int Run = 1;
 
 
     // 9-bit input busses
@@ -28,7 +30,6 @@ struct output_package {
     unsigned int a = 0;
     unsigned int g = 0;
     unsigned int done = 0;
-    unsigned int IRen = 0;
     unsigned int alu_op = 0;
     unsigned int mux : 3;
     unsigned int registers : 8;
