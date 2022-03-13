@@ -28,6 +28,7 @@ struct output_package {
     unsigned int a = 0;
     unsigned int g = 0;
     unsigned int done = 0;
+    unsigned int IRen = 0;
     unsigned int alu_op = 0;
     unsigned int mux : 3;
     unsigned int registers : 8;
@@ -76,8 +77,10 @@ int main() {
        case 1:
            if (inp.Resetn || out.done){
                CurrentState = 0;
+               inp.IRen = 1;
            } else {
                CurrentState = NextState;
+               inp.IRen = 0;
            }
            break;
        case 0:
