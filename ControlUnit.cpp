@@ -137,7 +137,7 @@ int main() {
             NextState = 0;
             break;
         case 4:
-            out.mux = 0b0000 + X_Address +1;
+            out.mux = 0b0000 + Y_Address +1;
             out.registers = 1*2^(X_Address) + 1*2^(Y_Address);
             out.done = 1;
             break;            
