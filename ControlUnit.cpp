@@ -57,7 +57,7 @@ int main() {
     input_package inp;
     output_package out;
 
-    inp.IR = 0b010101110; 
+    inp.IR = 0b010110101; 
     
     int CMD = (inp.IR & 0b111000000)/64;
     int X_Address = (inp.IR & 0b000111000)/8;
