@@ -90,6 +90,7 @@ int main() {
        }
 
         top->Resetn = inp.Resetn;
+        top->Run = inp.Run;
 
         switch (CurrentState)
         {
